@@ -9,7 +9,7 @@ def brain_gcd():
     while a != b:
         if a > b:
             a = a - b
-        else: 
+        else:
             b = b - a
     gcd = a
     return question_of_round, str(gcd)

@@ -12,7 +12,8 @@ def brain_progression():
     secret_elem = progression[index_sec_elem]
     progression[index_sec_elem] = ".."
     return ' '.join(map(str, progression)), str(secret_elem)
-    
+
+
 def main_question():
     return "What number is missing in the progression?"
 

@@ -2,6 +2,7 @@
 
 from random import randint, choice
 
+
 def evaluation(num_1, num_2, operation):
     match operation:
         case '+':
@@ -12,7 +13,7 @@ def evaluation(num_1, num_2, operation):
             return int(num_1) * int(num_2)
         case _:
             return None
-           
+
 
 def main_question():
     return 'What is the result of the expression?'
@@ -25,7 +26,7 @@ def brain_calc():
     question_of_round = f"{num_1} {operation} {num_2}"
     correct_answer = str(evaluation(num_1, num_2, operation))
     return question_of_round, correct_answer
-    
+
 
 def main():
     brain_calc()
