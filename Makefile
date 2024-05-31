@@ -4,6 +4,9 @@ install:
 brain-games:
 	poetry run brain-games
 
+brain-even:
+	poetry run brain-even
+
 build:
 	poetry build
 
@@ -12,3 +15,5 @@ publish:
 
 package-install:
 	python3 -m pip install dist/*.whl
+
+full_install: install build publish package-install
