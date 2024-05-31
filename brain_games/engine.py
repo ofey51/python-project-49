@@ -12,8 +12,9 @@ def check_answer(player_answer, correct_answer, player_name):
         print("Correct!")
         return True
     else:
+        text = f"'{player_answer}' is wrong answer ;(."
         print(
-            f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            f"{text} Correct answer was '{correct_answer}'.")
         print(f"Let's try again, {player_name}!")
         return False
 
